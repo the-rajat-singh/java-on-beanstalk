@@ -30,7 +30,7 @@ jobs:
           application_name: java-feedback-app
           environment_name: java-feedback-env
           region: ap-south-1
-          version_label: java-${{ github.run_number }}
+          version_label: java-${{ github.run_id }}-${{ github.sha }}
           deployment_package: target/feedbackapp-0.0.1-SNAPSHOT.jar
 
 
