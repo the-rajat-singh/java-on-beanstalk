@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h2>All Feedbacks</h2>
+
+<ul>
+  <li th:each="f : ${feedbacks}">
+    <b th:text="${f.name}"></b> :
+    <span th:text="${f.message}"></span>
+  </li>
+</ul>
+
+<a href="/">Back</a>
+</body>
+</html>
+
